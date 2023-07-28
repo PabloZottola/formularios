@@ -1,0 +1,18 @@
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40vh;
+  height: auto;
+}
+.registerForm p {
+  margin: 5px 0;
+}
+.registerForm label {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.registerForm button {
+  margin-bottom: 14px;
+}
