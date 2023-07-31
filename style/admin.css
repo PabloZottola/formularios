@@ -1,0 +1,20 @@
+.body {
+  background: #28242c;
+}
+.logout {
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+}
+.icons {
+  background: none;
+  border: none;
+}
+.icons img {
+  width: 22px;
+  height: auto;
+}
+.userTable {
+  text-align: center;
+}

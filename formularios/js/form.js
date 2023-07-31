@@ -71,12 +71,12 @@ function validateDataRegister(
   }
 }
 function validateDataLogin(email, password) {
-  let aprovUser = JSON.parse(localStorage.getItem("aprobados")) || [];
-  const emailExists = aprovUser.find((aprovUser) => {
-    return aprovUser.email === email;
+  let storedUsers = JSON.parse(localStorage.getItem("usuarios")) || [];
+  const emailExists = storedUsers.find((storedUsers) => {
+    return storedUsers.email === email;
   });
-  const passwordExists = aprovUser.find((aprovUser) => {
-    return aprovUser.password === password;
+  const passwordExists = storedUsers.find((storedUsers) => {
+    return storedUsers.password === password;
   });
   if (checkEmptySpacesLogin(email, password)) {
     formError.textContent = "Todos los campos son obligatorios.";
@@ -86,10 +86,6 @@ function validateDataLogin(email, password) {
     return;
   } else if (passwordExists == undefined) {
     formError.textContent = "Contraseña incorrecta.";
-    return;
-  } else if (email == "admin@gmail.com" && password == "admin123") {
-    localStorage.setItem("isAdmin", "true");
-    window.location.href = "admin.html";
     return;
   } else {
     console.log("Login Completo");
@@ -110,6 +106,7 @@ function storage(nameUser, email, phone, password) {
   }
   let newUser = new User(nameUser, email, phone, password);
   storedUsers.push(newUser);
+
   localStorage.setItem("usuarios", JSON.stringify(storedUsers));
 }
 function validateRegister(event) {

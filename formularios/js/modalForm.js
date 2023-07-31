@@ -12,7 +12,6 @@ function modalRegistro() {
       <div id="modalOverlay" class="modalOverlay">
         <div id="modalContainer" class="modalContainer">
           <span id="modalCloser" class="modalCloser">x</span>
-          <p class="modalHeader">Registro paciente</p>
           <div class="modalContent">
             <form id="registerForm" class="registerForm">
               <p id="formError"></p>
@@ -74,7 +73,6 @@ function modalLogin() {
       <div id="modalOverlay" class="modalOverlay">
         <div id="modalContainer" class="modalContainer">
           <span id="modalCloser" class="modalCloser">x</span>
-          <p class="modalHeader">Login</p>
           <div class="modalContent">
             <form id="registerForm" class="registerForm">
               <p id="formError"></p>
