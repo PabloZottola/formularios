@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+.top {
+  margin: 0;
+  background: url(../img/fondo3.jpg) #eeeeee;
+  background-size: cover;
+  background-position: center;
+}
+.gradient_top {
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(203, 203, 204, 0.5) 0%,
+    rgba(118, 118, 193, 0.8) 35%,
+    rgba(0, 212, 255, 0.5) 100%
+  );
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.top div h2 {
+  margin: 0;
+  padding: 50px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  color: rgb(226, 226, 226);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.mid {
+  margin: 30px 0;
+}
+.mid ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 35px;
+}
+.mid ul li {
+  padding: 20px;
+  text-align: center;
+  list-style: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease;
+}
+.mid ul li:hover {
+  transform: scale(1.1);
+}
+.mid ul li img {
+  margin-top: 15px;
+}
+.mid ul li h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  margin: 20px 0;
+}
+.mid ul li p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.cart-1 {
+  background-color: #002725;
+  color: white;
+}
+.cart-2 {
+  background-color: #005450;
+  color: white;
+}
+.cart-3 {
+  background-color: #2e987d;
+  color: white;
+}
+.cart-4 {
+  background-color: #aacd70;
+}
+.button {
+  background: url(../img/family-doctor-018.jpg) #eeeeee;
+  background-size: cover;
+  background-position: center;
+}
+.gradient_bot {
+  background: radial-gradient(
+    circle,
+    rgba(97, 97, 97, 0.6) 11%,
+    rgba(75, 75, 75, 0.7) 40%,
+    rgba(41, 41, 41, 0.7) 82%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.button div h3 {
+  color: white;
+  font-size: 65px;
+  margin-right: 60vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+@media screen and (max-width: 580px) {
+  .top div h2 {
+    padding: 40px 0;
+    font-size: 30px;
+  }
+}
